@@ -1,9 +1,4 @@
 
-
-
-
-
-
 //COMO DECLARAR UNA FUNCION
 
  /*   Para declarar una función en JavaScript, se utiliza la palabra clave "function", 
@@ -80,9 +75,7 @@ function sumar(numA,numB){
                 let resultado = num1 + num2;
                 return resultado;
               }
-
-                 
-
+                
 
                 //SCOPE 
 
@@ -122,8 +115,6 @@ console.log(sumar(2, 3)); // 5
 y devuelve su suma. Esta función se asigna a la variable sumar, 
 lo que nos permite llamarla utilizando ese nombre. */
 
- 
-
 
 /* FUNCION DECLARADA VS FUNCION EXPRESADA */
 function declarada(){
@@ -134,26 +125,28 @@ const funcionExpresada= function (){
   console.log("esta funcion esta asignada a una variable. si la llamo antes de esto, no existe para js")
 }
 
-
-
       //FUNCIONES FLECHA O   ARROW FUNCTION
-
 
       function normal(a,b){
         return a+b
       }
 
-
-
       let funcionAnonima = function(a, b) {
         return a + b;
       }
-
-
 
       let funcionFlecha = (a, b) => {
         return a + b;
       }
 
-
       let funcionFlechaEnLinea = (a, b) => a + b;
+
+
+      let cantidad = prompt ("ingresa la cantidad de repeticiones")
+      let texto = prompt("ingresa el texto a repetir")
+
+      cantidad = parseInt(cantidad)
+
+      for(let i =0; i<cantidad;i++){
+        console.log(texto)
+      }
